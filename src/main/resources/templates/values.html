@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Recommendation Service</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Min Timestamp</th>
+        <td th:text="${values[0]}"></td>
+    </tr>
+    <tr>
+        <th>Max Timestamp</th>
+        <td th:text="${values[1]}"></td>
+    </tr>
+    <tr>
+        <th>Min Price</th>
+        <td th:text="${values[2]}"></td>
+    </tr>
+    <tr>
+        <th>Max Price</th>
+        <td th:text="${values[3]}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>

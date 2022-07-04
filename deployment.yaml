@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: recommendation
+  name: recommendation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recommendation
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: recommendation
+    spec:
+      containers:
+      - image: localhost:5000/recommendation:1.0
+        name: recommendation-4r6vm
+        resources: {}
